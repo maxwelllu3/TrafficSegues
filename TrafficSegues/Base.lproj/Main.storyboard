@@ -20,6 +20,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="phT-I0-64P" kind="show" id="IKK-ZD-o1E"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,30 +42,59 @@
             <objects>
                 <viewController id="phT-I0-64P" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NEm-Es-bGL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROr-HV-4Ao">
+                                <rect key="frame" x="184" y="406" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="bAq-1Y-Uen" kind="show" id="mGH-zG-XbI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ROr-HV-4Ao" firstAttribute="centerX" secondItem="NEm-Es-bGL" secondAttribute="centerX" id="ILE-iX-pVA"/>
+                            <constraint firstItem="ROr-HV-4Ao" firstAttribute="centerY" secondItem="NEm-Es-bGL" secondAttribute="centerY" id="XdS-cs-1iB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="t3O-ZU-KfY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ENT-xs-XKe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tM-ZG-EGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823" y="123"/>
+            <point key="canvasLocation" x="819" y="117"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="f6e-oe-VsA">
             <objects>
                 <viewController id="bAq-1Y-Uen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OFW-SF-RYU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6O-Fu-kMZ">
+                                <rect key="frame" x="180" y="406" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <segue destination="n5q-RW-qGJ" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="Dtl-Cx-3CO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x6O-Fu-kMZ" firstAttribute="centerX" secondItem="OFW-SF-RYU" secondAttribute="centerX" id="CqD-T4-RpV"/>
+                            <constraint firstItem="x6O-Fu-kMZ" firstAttribute="centerY" secondItem="OFW-SF-RYU" secondAttribute="centerY" id="Ubl-bO-v6u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kR6-nr-mTe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="w82-8O-zJc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5k-XR-LJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="n5q-RW-qGJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1480" y="106"/>
+            <point key="canvasLocation" x="1488" y="117"/>
         </scene>
     </scenes>
 </document>
